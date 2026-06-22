@@ -145,6 +145,12 @@ All techniques tested on the same personal document QA dataset (bio/resume-style
 
 ---
 
+## Related
+
+Before RAG comes chunking. If you want to understand how documents should be split before retrieval, check out the companion repo: **[Chunking Techniques](https://github.com/Jeevav62/chunking-techniques)** — 6 strategies from fixed-size to agentic, with the same format as this cookbook.
+
+---
+
 ## Stack
 
 | Component | Library |
