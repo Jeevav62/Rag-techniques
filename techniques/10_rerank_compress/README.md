@@ -33,7 +33,7 @@ The trade-off is two extra LLM calls — one for reranking, one embedded in the 
 |---|---|
 | Speed | Slow — avg ~10-11s |
 | Accuracy | Very High |
-| Cost | Higher — 2 extra LLM passes |
+| Cost | Higher — 1 extra LLM call (reranker) + extra embedding pass (compression) |
 | Strength | Highest-precision context of all techniques |
 
 ## Benchmark

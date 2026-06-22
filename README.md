@@ -141,7 +141,7 @@ All techniques tested on the same personal document QA dataset (bio/resume-style
 | Parent-Child RAG | Very High | 8.3s | 0 |
 | RRR RAG | High | 5.3s | 1 (query rewrite) |
 | Sentence Compression | High | 6-7s | 0 |
-| Rerank + Compress | Very High | 10-11s | 2 |
+| Rerank + Compress | Very High | 10-11s | 1 (reranker) |
 
 ---
 
