@@ -36,34 +36,34 @@ Built with [LlamaIndex](https://www.llamaindex.ai/) + OpenAI. Tested against the
 
 | # | Technique | Accuracy | Avg Latency | Best For |
 |---|-----------|:--------:|:-----------:|----------|
-| [01](techniques/01_naive_rag/) | **Naive RAG** | Medium | ~4.7s | Baseline, simple docs, getting started |
-| [02](techniques/02_unstructured_rag/) | **Unstructured RAG** | Medium | ~4.9s | Scanned PDFs, images, OCR-heavy files |
-| [03](techniques/03_contextual_compression/) | **Contextual Compression** | High | ~10s | Long docs, noisy datasets, high precision |
-| [04](techniques/04_fusion_rag/) | **Fusion RAG** | High | ~7.5s | Ambiguous queries, better recall |
-| [05](techniques/05_hybrid_rag/) | **Hybrid RAG** ⭐ | High | ~5.6s | Best all-around — keyword + semantic |
-| [06](techniques/06_hyde_rag/) | **HyDE RAG** | High | ~12.5s | Short/vague queries, Q&A over profiles |
-| [07](techniques/07_parent_child_rag/) | **Parent-Child RAG** | Very High | ~8.3s | Long documents, context-heavy answers |
-| [08](techniques/08_rrr_rag/) | **RRR RAG** | High | ~5.3s | Conversational queries, chatbot interfaces |
-| [09](techniques/09_sentence_compression/) | **Sentence Compression** | High | ~6-7s | Noisy chunks, reducing context tokens |
-| [10](techniques/10_rerank_compress/) | **Rerank + Compress** | Very High | ~10-11s | Max precision, high-stakes QA |
+| [01](techniques/01_naive_rag/) | [**Naive RAG**](techniques/01_naive_rag/) | Medium | ~4.7s | Baseline, simple docs, getting started |
+| [02](techniques/02_unstructured_rag/) | [**Unstructured RAG**](techniques/02_unstructured_rag/) | Medium | ~4.9s | Scanned PDFs, images, OCR-heavy files |
+| [03](techniques/03_contextual_compression/) | [**Contextual Compression**](techniques/03_contextual_compression/) | High | ~10s | Long docs, noisy datasets, high precision |
+| [04](techniques/04_fusion_rag/) | [**Fusion RAG**](techniques/04_fusion_rag/) | High | ~7.5s | Ambiguous queries, better recall |
+| [05](techniques/05_hybrid_rag/) | [**Hybrid RAG**](techniques/05_hybrid_rag/) ⭐ | High | ~5.6s | Best all-around — keyword + semantic |
+| [06](techniques/06_hyde_rag/) | [**HyDE RAG**](techniques/06_hyde_rag/) | High | ~12.5s | Short/vague queries, Q&A over profiles |
+| [07](techniques/07_parent_child_rag/) | [**Parent-Child RAG**](techniques/07_parent_child_rag/) | Very High | ~8.3s | Long documents, context-heavy answers |
+| [08](techniques/08_rrr_rag/) | [**RRR RAG**](techniques/08_rrr_rag/) | High | ~5.3s | Conversational queries, chatbot interfaces |
+| [09](techniques/09_sentence_compression/) | [**Sentence Compression**](techniques/09_sentence_compression/) | High | ~6-7s | Noisy chunks, reducing context tokens |
+| [10](techniques/10_rerank_compress/) | [**Rerank + Compress**](techniques/10_rerank_compress/) | Very High | ~10-11s | Max precision, high-stakes QA |
 
 ---
 
 ## Quick Decision Guide
 
-**Default choice with no constraints** → [Hybrid RAG](techniques/05_hybrid_rag/) — handles keyword and semantic queries, reliable across document types.
+**Default choice with no constraints** → [Hybrid RAG](techniques/05_hybrid_rag/README.md) — handles keyword and semantic queries, reliable across document types.
 
-**Users type conversationally** → [RRR RAG](techniques/08_rrr_rag/) — rewrites vague queries before retrieval.
+**Users type conversationally** → [RRR RAG](techniques/08_rrr_rag/README.md) — rewrites vague queries before retrieval.
 
-**Scanned PDFs or images** → [Unstructured RAG](techniques/02_unstructured_rag/) — OCR layer handles what text readers can't.
+**Scanned PDFs or images** → [Unstructured RAG](techniques/02_unstructured_rag/README.md) — OCR layer handles what text readers can't.
 
-**Short, vague questions** → [HyDE RAG](techniques/06_hyde_rag/) — generates a hypothetical answer and retrieves against that.
+**Short, vague questions** → [HyDE RAG](techniques/06_hyde_rag/README.md) — generates a hypothetical answer and retrieves against that.
 
-**Long documents, need context in answers** → [Parent-Child RAG](techniques/07_parent_child_rag/) — small chunks for precision, large chunks for context.
+**Long documents, need context in answers** → [Parent-Child RAG](techniques/07_parent_child_rag/README.md) — small chunks for precision, large chunks for context.
 
-**Accuracy is the only priority** → [Rerank + Compress](techniques/10_rerank_compress/) — two-stage post-processing, cleanest context.
+**Accuracy is the only priority** → [Rerank + Compress](techniques/10_rerank_compress/README.md) — two-stage post-processing, cleanest context.
 
-**Just learning RAG** → [Naive RAG](techniques/01_naive_rag/) — understand the baseline before adding complexity.
+**Just learning RAG** → [Naive RAG](techniques/01_naive_rag/README.md) — understand the baseline before adding complexity.
 
 ---
 
