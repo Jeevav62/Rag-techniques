@@ -1,0 +1,29 @@
+# Core
+python-dotenv>=1.0.0
+
+# LlamaIndex
+llama-index>=0.10.40
+llama-index-core>=0.10.40
+llama-index-llms-openai>=0.1.7
+llama-index-embeddings-openai>=0.1.9
+llama-index-readers-file>=0.1.6
+llama-index-retrievers-bm25>=0.1.3
+
+# OpenAI
+openai>=1.6.0
+
+# Document parsing (PDF, images, scanned docs)
+unstructured[pdf]>=0.12.4
+pillow>=10.0.0
+pytesseract>=0.3.10
+pdfminer.six>=20221105
+
+# Text processing
+nltk>=3.8.1
+tiktoken>=0.6.0
+
+# Sparse retrieval
+rank-bm25>=0.2.2
+
+# UI
+gradio>=4.15.0
