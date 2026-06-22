@@ -212,6 +212,4 @@ MIT — use it, modify it, share it.
 
 If this helped you understand RAG better, consider giving it a ⭐
 
-**Keywords**: RAG, Advanced RAG, Retrieval Augmented Generation, RAG techniques, Naive RAG, Hybrid RAG, HyDE RAG, Fusion RAG, Parent Child RAG, RRR RAG, Contextual Compression RAG, Sentence Compression RAG, LlamaIndex RAG, RAG with OpenAI, RAG Python, RAG cookbook, RAG tutorial, vector search, BM25 retrieval, document QA, LLM retrieval
-
 </div>
